@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <html lang="pt-br"></html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link 
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+      crossorigin="anonymous"
+    />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <title>Infográfico - SW2</title>
+        <script>
+        $(document).ready(function() {
+            $("#botao1").click(function() {
+                $("body").toggleClass("active")
+            });
+        });
+        
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            }).click();
+        });
+
+        $(document).ready(function(){
+            $("#girar").click(function(){
+                $("#painel").slideToggle("slow");
+            }).click();
+        });
+
+        $(document).ready(function(){
+            $("#flip2").click(function(){
+                $("#panel2").slideToggle("slow");
+            }).click();
+        });
+
+        $(document).ready(function(){
+            $("#flip3").click(function(){
+                $("#panel3").slideToggle("slow");
+            }).click();
+        });
+
+        $(document).ready(function(){
+            $("#flip4").click(function(){
+                $("#panel4").slideToggle("slow");
+            }).click();
+        });
+
+        $(document).ready(function(){
+            $("#flip5").click(function(){
+                $("#panel5").slideToggle("slow");
+            }).click();
+        });
+        </script>
+    </head>
+  
+  <style>
+      body{
+          background-image: url(bg4.png);
+          color:white;
+      }
+      body.active{
+          background-image: url(bg2.webp);
+      }
+    
+      .apertar {
+          border-radius: 12px;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+      }
+      .front {
+          display: block;
+          padding: 12px 42px;
+          border-radius: 12px;
+          font-size: 1.25rem;
+          background:darkslategrey;
+          color: gold;
+          box-shadow: 0px 5px 0px 0px #4b0562;
+          transform: translateY(-6px);
+      }
+
+     .apertar:active .front {
+          transform: translateY(-2px);
+      }
+      
+      #botao2{
+          color:whitesmoke;
+          background-color: rgb(38, 37, 37);
+      }
+      #panel,#painel,#panel2,#panel3,#panel4,#panel5{
+          text-align: left;
+      }
+      h1{
+          color: gold;
+          background-color: rgb(38, 37, 37);
+          width: 450px;
+          border-radius: 40px;
+          border-style:solid;
+      }
+      .motivos{
+          color: gold;
+          background-color: rgb(38, 37, 37);
+          width: 100px;
+          border-radius: 40px;
+          border-style:solid;
+      }
+  </style>
+  
+  <body>
+    <center>
+        <div class="container">
+            <ul class="justify-content-center">
+                <br><h1>DESMATAMENTO & ECONOMIA</h1><br><br><br>
+                <h3><button id="botao1" class="apertar">
+                    <span class="front">
+                      Clique Para $!
+                    </span>
+                  </button></h3>
+        <div class="row">
+          <div class="col-sm motivos">
+            <h3>Motivos</h3><br>
+            <div id="flip"><button id="botao2"><h4>Agricultura</h4></button></div>
+            <div id="panel"> A expansão agrícola é a principal causa do 
+                desmatamento, pois as áreas de floresta são 
+                substituídas por terras agrícolas.
+            </div>
+            <br><br>
+            <div id="girar"><button id="botao2"><h4>Exploração</h4></button></div>
+            <div id="painel"> Algumas empresas e organizações 
+                explorem recursos naturais, como madeira e minérios, em áreas florestais. Isso 
+                contribui para o desmatamento.
+            </div>
+            <br><br>
+            <div id="flip2"><button id="botao2"><h4>Incapacidade</h4></button></div>
+            <div id="panel2">
+                Alguns indivíduos e grupos são incapazes de preservarem recursos naturais, 
+                seja por falta de recursos ou condições de vida. 
+                Isso pode levar ao desmatamento de áreas florestais importantes para sua sobrevivência.
+            </div>
+          </div>
+          <div class="col-sm">
+            
+         </div>
+         <div class="col-sm motivos">
+            <h3>Consequências</h3><br>
+            <div id="flip3"><button id="botao2"><h4>Biodiversidade</h4></button></div>
+            <div id="panel3">
+                O desmatamento é uma das principais causas da perda de 
+                biodiversidade e é responsável por mais de 20% da perda global. Com a destruição 
+                das florestas e a remoção de espécies animais e vegetais do seu habitat natural,
+                podemos perder muitas espécies em vias de extinção e suas funções ecologicas no ecossistema.
+            </div>
+            <br><br>
+            <div id="flip4"><button id="botao2"><h4>Clima</h4></button></div>
+            <div id="panel4">
+                O desmatamento é responsável pela emissão de uma grande
+                quantidade de gases de efeito estufa que contribuem para o aquecimento global.
+                A destruição das árvores e a liberação do dióxido de carbono na atmosfera podem
+                afetar o clima global, gerando um efeito dominó que pode ter consequências graves 
+                para o nosso planeta.
+            </div>
+            <br><br>
+            <div id="flip5"><button id="botao2"><h4>Desequilíbrio</h4></button></div>
+            <div id="panel5">
+                Com menos florestas e árvores, os ecossistemas podem ser 
+                alterados e desequilibrados. Isso pode criar problemas para animais e plantas que 
+                dependem de florestas intactas para sua sobrevivência e que são essenciais para 
+                manter o equilíbrio ecológico em sua região.
+            </div>
+            <br><br>
+         </div>
+    </div>
+        </ul>
+      </div>
+    </center>
+        
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
